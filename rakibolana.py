@@ -1,3 +1,4 @@
+import os
 from flask import Flask, request, jsonify
 import requests
 from bs4 import BeautifulSoup as bs
@@ -82,5 +83,6 @@ def get_word_data():
 def home():
     return "Welcome to the Malagasy Dictionary API. Use /api/teny?word=yourword"
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))  # Use PORT from environment or 5000 as fallback
+    app.run(debug=False, host="0.0.0.0", port=port)
