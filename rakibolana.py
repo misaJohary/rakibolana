@@ -1,5 +1,5 @@
 import os
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 import requests
 from bs4 import BeautifulSoup as bs
 import unicodedata
@@ -38,6 +38,22 @@ def extract_synonyms(soup):
             links = tds[1].find_all("a")
             return [link.get_text(strip=True) for link in links]
     return []
+
+@app.route('/.well-known/apple-app-site-association')
+def serve_apple_file():
+    return send_from_directory(
+        directory='static/.well-known',
+        filename='apple-app-site-association',
+        mimetype='application/json'
+    )
+
+@app.route('/.well-known/assetlinks.json')
+def serve_assetlinks():
+    return send_from_directory(
+        directory='static/.well-known',
+        filename='assetlinks.json',
+        mimetype='application/json'
+    )
 
 @app.route('/api/teny', methods=['GET'])
 def get_word_data():
