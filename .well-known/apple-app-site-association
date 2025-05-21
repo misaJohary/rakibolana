@@ -1,0 +1,26 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["3G3WS7F2CM.com.farano.boyer.farano"],
+        "components": [
+          {
+            "#": "no_universal_links",
+            "exclude": true,
+            "comment": "Matches any URL with a fragment that equals no_universal_links and instructs the system not to open it as a universal link."
+          },
+          {
+            "/": "/share",
+            "comment": "Matches any URL with a path that starts with /secure_link/login/."
+          }
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": ["3G3WS7F2CM.com.farano.boyer.farano"]
+  },
+  "activitycontinuation": {
+    "apps": ["3G3WS7F2CM.com.farano.boyer.farano"]
+  }
+}

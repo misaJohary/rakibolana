@@ -1,0 +1,15 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.farano.boyer.farano",
+      "sha256_cert_fingerprints":
+        [
+            "CB:0F:9B:3C:16:65:2A:BF:70:9C:1D:61:C2:92:93:BE:08:E1:CF:C2:E3:B0:FA:A6:20:0A:64:19:46:E3:D7:37",
+            "56:39:E0:E8:3F:8E:90:EE:A6:A5:AE:9F:7E:D4:03:8D:5F:F9:15:8B:62:1A:8A:5A:1C:50:3D:E6:22:4C:8D:C8",
+            "4E:32:D9:C5:48:18:3C:FE:AB:0B:DF:12:FE:FF:AE:CC:DD:85:86:71:3E:47:E2:CD:D7:ED:59:D5:A8:1C:48:EE"
+        ]
+    }
+  }
+]
