@@ -43,7 +43,7 @@ def extract_synonyms(soup):
 def serve_apple_file():
     return send_from_directory(
         directory='static/.well-known',
-        filename='apple-app-site-association',
+        path='apple-app-site-association',
         mimetype='application/json'
     )
 
@@ -51,7 +51,7 @@ def serve_apple_file():
 def serve_assetlinks():
     return send_from_directory(
         directory='static/.well-known',
-        filename='assetlinks.json',
+        path='assetlinks.json',
         mimetype='application/json'
     )
 
